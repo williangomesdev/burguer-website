@@ -21,7 +21,7 @@
 @mixin title-text($titleSize) {
   font-size: $titleSize;
   text-transform: uppercase;
-  color: ver(--white);
+  color: var(--white);
 }
 
 @mixin grap-text($grapSize) {
@@ -61,6 +61,26 @@ body {
   background-attachment: fixed;
   background-position: center;
   overflow-x: hidden;
+}
+
+section {
+  padding: 3rem 2rem;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  cursor: pointer;
+  color: var(--white);
+  border: var(--border);
+  background: no-repeat;
+  font-size: 1.7rem;
+  padding: 1rem 3rem;
+
+  &:hover {
+    color: var(--black);
+    background: var(--white);
+  }
 }
 
 .header {
@@ -169,6 +189,31 @@ body {
   }
 }
 
+.home {
+  margin-top: 7rem;
+  background: url(../images/home-bg.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  .content {
+    max-width: 70rem;
+    text-align: center;
+    margin: 0 auto;
+
+    img {
+      width: 100%;
+    }
+
+    h3 {
+      @include title-text(4rem);
+    }
+
+    p {
+      @include grap-text(1.7rem);
+    }
+  }
+}
+
 //media queries
 
 @media (max-width: 1200px) {
@@ -213,6 +258,12 @@ body {
         display: none;
       }
     }
+  }
+}
+
+@media (max-width: 768px) {
+  .home .content h3 {
+    font-size: 2.5rem;
   }
 }
 
