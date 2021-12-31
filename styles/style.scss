@@ -67,6 +67,15 @@ section {
   padding: 3rem 2rem;
 }
 
+.heading {
+  text-align: center;
+  margin-bottom: 3rem;
+
+  h3 {
+    @include title-text(3rem);
+  }
+}
+
 .btn {
   display: inline-block;
   margin-top: 1rem;
@@ -243,6 +252,43 @@ section {
   }
 }
 
+.menu {
+  .box-container {
+    @include grid(44rem);
+
+    .box {
+      text-align: center;
+
+      &:hover img{
+        transform: translateY(-1rem);
+      }
+
+      img {
+        height: 35rem;
+      }
+
+      .content {
+        padding: 1rem 0;
+        .stars {
+          margin-bottom: 2rem;
+
+          i {
+            color: var(--yellow);
+          }
+        }
+
+        h3 {
+          font-size: 1.7rem;
+          @include title-text(2rem);
+        }
+
+        .price {
+          @include grap-text(2rem);
+        }
+      }
+    }
+  }
+}
 //media queries
 
 @media (max-width: 1200px) {
