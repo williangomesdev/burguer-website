@@ -307,6 +307,72 @@ section {
   color: var(--light-gray);
 }
 
+.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 3rem;
+}
+
+.about .image {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40rem;
+          flex: 1 1 40rem;
+}
+
+.about .image img {
+  width: 100%;
+}
+
+.about .content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40rem;
+          flex: 1 1 40rem;
+}
+
+.about .content .title {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  color: var(--white);
+}
+
+.about .content p {
+  font-size: 1.5rem;
+  line-height: 2;
+  color: var(--light-gray);
+  padding: 2rem 0;
+}
+
+.about .content .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.about .content .icons h3 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 25rem;
+          flex: 1 1 25rem;
+  font-size: 1.7rem;
+  text-transform: uppercase;
+  color: var(--white);
+}
+
+.about .content .icons h3 i {
+  padding-right: .5rem;
+  color: var(--yellow);
+}
+
 @media (max-width: 1200px) {
   .header {
     padding: 3rem;

@@ -259,7 +259,7 @@ section {
     .box {
       text-align: center;
 
-      &:hover img{
+      &:hover img {
         transform: translateY(-1rem);
       }
 
@@ -284,6 +284,52 @@ section {
 
         .price {
           @include grap-text(2rem);
+        }
+      }
+    }
+  }
+}
+
+.about {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+
+  .image {
+    flex: 1 1 40rem;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .content {
+    flex: 1 1 40rem;
+
+    .title {
+      @include title-text(2.5rem);
+    }
+
+    p {
+      @include grap-text(1.5rem);
+      padding: 2rem 0;
+    }
+
+    .icons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      margin-top: 1rem;
+      margin-bottom: 2rem;
+
+      h3 {
+        flex: 1 1 25rem;
+        @include title-text(1.7rem);
+        
+
+        i{
+          padding-right: .5rem;color: var(--yellow);
         }
       }
     }
