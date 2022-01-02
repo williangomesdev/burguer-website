@@ -411,6 +411,86 @@ section {
   color: var(--yellow);
 }
 
+.contact .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 3rem;
+}
+
+.contact .row .map {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40rem;
+          flex: 1 1 40rem;
+}
+
+.contact .form {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40rem;
+          flex: 1 1 40rem;
+}
+
+.contact .form .icons-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.contact .form .icons-container .icons {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 17rem;
+          flex: 1 1 17rem;
+  text-align: center;
+}
+
+.contact .form .icons-container .icons i {
+  height: 6rem;
+  width: 6rem;
+  line-height: 6rem;
+  border-radius: 50%;
+  background: var(--yellow);
+  color: var(--black);
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.contact .form .icons-container .icons h3 {
+  padding: 1rem 0;
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: var(--white);
+}
+
+.contact .form form {
+  text-align: center;
+}
+
+.contact .form form .box {
+  padding: 1.2rem 1.4rem;
+  font-size: 1.6rem;
+  color: var(--white);
+  background: none;
+  border: var(--border);
+  text-transform: none;
+  width: 100%;
+  margin: 0.7rem 0;
+}
+
+.contact .form form .box:focus {
+  border-color: var(--yellow);
+}
+
+.contact .form form textarea {
+  height: 15rem;
+  resize: none;
+}
+
 @media (max-width: 1200px) {
   .header {
     padding: 3rem;
@@ -461,11 +541,28 @@ section {
   .home .content h3 {
     font-size: 2.5rem;
   }
+  .reviews .box-container {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  .contact .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 @media (max-width: 450px) {
   html {
     font-size: 50%;
+  }
+  .contact .form .icons-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 /*# sourceMappingURL=style.css.map */
