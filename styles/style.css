@@ -450,6 +450,23 @@ section {
   padding: 1.5rem;
 }
 
+.footer {
+  text-align: center;
+  background: linear-gradient(transparent, var(--black));
+}
+.footer .links a {
+  margin: 1rem;
+}
+.footer .credit {
+  font-size: 2rem;
+  line-height: 2;
+  color: var(--light-gray);
+  padding-top: 2rem;
+}
+.footer .credit span {
+  color: var(--yellow);
+}
+
 @media (max-width: 1200px) {
   .header {
     padding: 3rem;
@@ -514,5 +531,16 @@ section {
 
   .contact .form .icons-container {
     flex-direction: column;
+  }
+
+  .about .content .title,
+.about .content p {
+    text-align: center;
+  }
+
+  .center {
+    width: 100%;
+    display: flex;
+    justify-content: center;
   }
 }/*# sourceMappingURL=style.css.map */
